@@ -1,1 +1,1 @@
-The Arduino folder includes the ESP and Arduino code. The remainder files are the entire Unity project.
+The Arduino folder includes the ESP and Arduino code. The remaining files are the entire Unity project.
