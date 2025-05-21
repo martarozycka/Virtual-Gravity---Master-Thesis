@@ -1,0 +1,3 @@
+repository "Project26_03/Project26_03@20067458856477@cloud"
+  path "/"
+    smartbranch "/main/Sindjas updates"
