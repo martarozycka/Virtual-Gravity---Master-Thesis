@@ -1,5 +1,5 @@
-#include <AltSoftSerial.h>    // Hardware-timer serial for ODrive
-#include <SoftwareSerial.h>   // Bit-bang serial for ESP8266
+#include <AltSoftSerial.h>    
+#include <SoftwareSerial.h>   
 #include <ODriveUART.h>
 #include <math.h>
 
