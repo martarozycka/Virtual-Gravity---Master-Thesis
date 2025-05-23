@@ -149,7 +149,7 @@ void updateTorque() {
   float       maxT     = mass * gValue * leverArm;
   float       torque      = -maxT * (1 - sin((angle_check / 0.785f) * (PI/2)));
 
-  odrive.setTorque(tau);
+  odrive.setTorque(torque);
 
   // debug in the serial monitor to see
   Serial.print("revs="); Serial.print(integratedRev, 3);
