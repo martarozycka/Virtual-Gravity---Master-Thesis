@@ -143,7 +143,7 @@ void updateTorque() {
 
   // clamp [0…40degrees] but can be any angle, so 0.785 is max angle in radians where torque becomes 0 Nm
   float angle_check = angle < 0 ? 0 : angle;
-  if (angle_check > 0.785f) err = 0.785f;
+  if (angle_check > 0.785f) angle_check = 0.785f;
 
   // torque calculation
   float       maxT     = mass * gValue * leverArm;
@@ -154,7 +154,7 @@ void updateTorque() {
   // debug in the serial monitor to see
   Serial.print("revs="); Serial.print(integratedRev, 3);
   Serial.print(" θ=");   Serial.print(angle,        3);
-  Serial.print(" err="); Serial.print(err,          3);
+  Serial.print(" angle_check="); Serial.print(angle_check,          3);
   Serial.print(" T=");   Serial.println(torque,          3);
 }
 
